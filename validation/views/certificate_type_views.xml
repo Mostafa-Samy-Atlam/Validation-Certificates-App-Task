@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="certificate_type_action" model="ir.actions.act_window">
+            <field name="name">CertificateType</field>
+            <field name="res_model">certificate.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="vehicle_certificate_type_menu" name="CertificateType" parent="certificate_root_menu" action="certificate_type_action"/>
+    </data>
+</odoo>

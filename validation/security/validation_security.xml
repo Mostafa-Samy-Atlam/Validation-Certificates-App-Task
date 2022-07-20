@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record id="validation_security_category" model="ir.module.category">
+            <field name="name">Validation</field>
+        </record>
+        <record id="validation_user_group" model="res.groups">
+            <field name="name">Normal Users</field>
+            <field name="category_id" ref="validation_security_category"/>
+        </record>
+        <record id="validation_manager_group" model="res.groups">
+            <field name="name">Supervisors</field>
+            <field name="category_id" ref="validation_security_category"/>
+            <field name="implied_ids" eval="[(4, ref('validation_user_group'))]"/>
+        </record>
+    </data>
+</odoo>

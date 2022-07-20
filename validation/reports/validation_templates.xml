@@ -1,0 +1,108 @@
+<odoo>
+    <data>
+        <template id="vehicle_certificate_template_arabic">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="certificate">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="row">
+                                <h1 style="color: red;">شهادة صلاحية</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>.</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5><span t-out="certificate.department"/> السيد اللواء مدير ادارة مرور/ </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4>تحية طيبة و بعد ....</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>.</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5><span t-out="certificate.certificate_type"/>اتشرف بافادة سيادتكم بانه تم تعديل: </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5> <span t-out="certificate.chassis_number"/>محرك رقم: </h5>
+                                    <h5> <span t-out="car_model"/>موديل: </h5>
+                                    <h5>.</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5> <span t-out="certificate.chassis_number"/>شاسيه رقم: </h5>
+                                    <h5> <span t-out="certificate.brand"/>الماركة: </h5>
+                                    <h5><span t-out="certificate.customer_crm"/>اسم المالك: </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>حيث ان المؤسسة معتمدة من الهيئة العامة للتنمية الصناعية و مصاحة الرقابة الصناعية و معتمدة بادارات المرور و لها سجل تجاري صناعي</p>
+                                <p>و بطاقة ضريبية بهذه الصفة و قد تم فحص التعديل و التركيب و اللحامات و الاصلاحات اللازمة طبقا لأصول الصناعه و دون الاخلال بالتصميم</p>
+                                <p>الاصلي و قد تم تجربة السيارة ووجد انها متزنة و هذه شهادة منا لتقديمها للمرور.</p>
+                            </div>
+                            <div class="row">
+                                <h4>و تفضلوا بقبول فائق الاحترام و التقدير ....</h4>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+        <template id="vehicle_certificate_template_english">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="certificate">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="row">
+                                <h1 style="color: red;">Validity Certificate</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>.</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Mr. Major General Director of Traffic Department: <span t-out="certificate.department"/></h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4>After Greetings ,,,,</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>I have the honor to inform you that the following has been modified:<span t-out="certificate.certificate_type"/></h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>.</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>Chassis Number:<span t-out="certificate.chassis_number"/></h5>
+                                    <h5>Brand:<span t-out="certificate.brand"/></h5>
+                                    <h5>Owner: <span t-out="certificate.customer_crm"/></h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Chassis Number:<span t-out="certificate.chassis_number"/></h5>
+                                    <h5>Car Model:<span t-out="car_model"/></h5>
+                                    <h5>.</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>As the institution is approved by the General Authority for Industrial Development and the Industrial Control Authority and approved </p>
+                                <p>by the traffic departments and has an industrial commercial register and a tax card in this capacity, and the modification, installation, welds and necessary repairs</p>
+                                <p>have been examined according to the principles of the industry and without prejudice to the original design of the car has been tested and found to be stable, and this is a certificate from us to present to the traffic.</p>
+                            </div>
+                            <div class="row">
+                                <h4>Yours sincerely ....</h4>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

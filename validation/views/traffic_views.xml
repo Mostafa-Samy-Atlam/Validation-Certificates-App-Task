@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="traffic_action" model="ir.actions.act_window">
+            <field name="name">TrafficDepartment</field>
+            <field name="res_model">traffic.department</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="traffic_department_menu" name="TrafficDepartment" parent="certificate_root_menu" action="traffic_action"/>
+    </data>
+</odoo>

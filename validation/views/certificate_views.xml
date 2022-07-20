@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="certificate_action" model="ir.actions.act_window">
+            <field name="name">Certificate</field>
+            <field name="res_model">vehicle.certificate</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="sequence_id" model="ir.sequence">
+ 	        <field name="name">Name</field>
+ 	        <field name="code">code</field>
+ 	        <field name="padding">5</field>
+ 	        <field name="prefix">TD</field>
+ 	        <field name="suffix"> </field>
+        </record>
+        <menuitem id="certificate_root_menu" name="Certificate"/>
+        <menuitem id="vehicle_certificate_menu" name="Certificate" parent="certificate_root_menu" action="certificate_action"/>
+    </data>
+</odoo>
